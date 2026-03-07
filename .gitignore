@@ -1,0 +1,30 @@
+# Dependencies
+# This ignores node_modules in both server and client folders
+node_modules/
+
+# Production build files
+dist/
+build/
+
+# Environment Variables
+# IMPORTANT: Never upload your API keys!
+.env
+.env.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
