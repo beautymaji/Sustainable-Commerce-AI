@@ -120,7 +120,7 @@ OpenAI API Key (Optional - works with Mock Mode without it)
 1. Clone the Repository
 bash
 
-git clone https://github.com/beautymaji/Sustainable-Commerce-AI.git
+git clone https://github.com/YOUR_USERNAME/Sustainable-Commerce-AI.git
 cd Sustainable-Commerce-AI
 2. Setup Backend
 bash
@@ -154,6 +154,6 @@ Sign Up: Create a new account.
 Login: Access the dashboard.
 Test Modules: Navigate to "Auto-Category" or "Support Bot" via the sidebar.
 
- Author
-Beauty Maji
+Author 
+[Beauty Maji]
 Role: Full Stack / AI Intern Applicant
