@@ -32,6 +32,7 @@ This project fulfills the requirements of the Rayeva AI Systems Assignment by im
 <img width="613" height="610" alt="image" src="https://github.com/user-attachments/assets/7af86c98-9fbb-428c-b6c2-a8bc53c6219a" />
 
 
+
 Architectural Highlights
 1.Separation of AI Logic: The services/openaiService.js isolates all AI interactions. This allows the system to switch between Real AI and Mock Mode seamlessly without breaking the application.
 
@@ -128,6 +129,17 @@ npm install
 npm run dev
 4. Access Application
 Open http://localhost:5173. Register an account to access the dashboard.
+
+📸 Application Previewion Preview
+<img width="1886" height="935" alt="image" src="https://github.com/user-attachments/assets/8b17b5d4-21c6-4c58-b479-aff5d57e35a6" />
+
+
+Module 1: Auto-Category & Tag Generator
+<img width="1919" height="920" alt="image" src="https://github.com/user-attachments/assets/f6f747b3-8d32-4660-8ccf-018264192e0b" />
+
+Module 4: AI WhatsApp Support Bot
+<img width="1883" height="920" alt="image" src="https://github.com/user-attachments/assets/604f4af6-cd6d-43d5-b8f1-7a74f6e45b07" />
+
 
 👤 Author
 [Beauty Maji]
