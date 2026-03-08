@@ -28,37 +28,9 @@ Sustainable Commerce AI is a production-ready application designed to reduce man
 
 This project fulfills the requirements of the Rayeva AI Systems Assignment by implementing Module 1 (Auto-Category) and Module 4 (WhatsApp Support Bot). It demonstrates the integration of LLMs (Large Language Models) with real business logic to ensure accuracy, structured outputs, and practical usefulness.
 
-
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              ARCHITECTURE FLOW                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-
-┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
-│   CLIENT SIDE    │      │   SERVER SIDE    │      │  EXTERNAL/APIS   │
-│                  │      │                  │      │                  │
-│  ┌────────────┐  │      │  ┌────────────┐  │      │  ┌────────────┐  │
-│  │  Frontend  │  │      │  │  Backend   │  │      │  │  OpenAI    │  │
-│  │  (React +  │  │ HTTP │  │  (FastAPI/ │  │ REST │  │  GPT-4 API │  │
-│  │   Vite)    │◄─┼─────►│  │   Python)  │◄─┼─────►│  │            │  │
-│  └────────────┘  │      │  └────────────┘  │      │  └────────────┘  │
-│                  │      │         │        │      │                  │
-│  ┌────────────┐  │      │         │        │      │  ┌────────────┐  │
-│  │  Module 1  │  │      │         ▼        │      │  │  WhatsApp  │  │
-│  │ Auto-Tag   │  │      │  ┌────────────┐  │      │  │  Business  │  │
-│  └────────────┘  │      │  │  Business  │  │      │  │   API      │  │
-│                  │      │  │   Logic    │  │      │  └────────────┘  │
-│  ┌────────────┐  │      │  │            │  │      │                  │
-│  │  Module 4  │  │      │  │ - Validation  │      │               v  │
-│  │ Support Bot│  │      │  │ - Prompt Eng. │      │                v │
-│  └────────────┘  │      │  │ - JSON Parser │      │                  │
-│                  │      │  └────────────┘  │      │                  │
-└──────────────────┘      │         │        │      └──────────────────┘
-                          │         ▼        │
-                          │  ┌────────────┐  │
-                          │  │  Database  │  │
-                          │  │  (SQLite)  │  │
-                          │  └────────────┘  │
-                          └──────────────────┘
+🏗️ Architecture Overview
++-----------------------+       +-----------------------+       +-----------------------+|       FRONTEND        |       |       BACKEND         |       |    EXTERNAL SERVICES  ||       (React/Vite)    |       |    (Python/FastAPI)   |       |                       |+-----------------------+       +-----------------------+       +-----------------------+|                       |       |                       |       |                       ||  [ Module 1 UI ]      |       |  [ API Endpoints ]    |       |   OpenAI API (GPT-4)  ||  - Product Form       | <---> |  - /api/categorize    | <---> |   (Structured Output) ||  - JSON Viewer        |       |  - /api/support-chat  |       |                       ||                       |       |                       |       +-----------------------+|  [ Module 4 UI ]      |       |  [ Business Logic ]   |       |                       ||  - Chat Interface     |       |  - Prompt Engineering |       |   WhatsApp Business   ||  - Order Status       |       |  - Data Validation    |       |   API (Future Scope)  ||                       |       |  - Error Handling     |       |                       |+-----------------------+       +-----------------------+       +-----------------------+                                        |                                        v                                +-----------------------+                                |      DATABASE         |                                |      (SQLite/SQL)     |                                +-----------------------+                                | - Products            |                                | - Orders              |                                | - Conversation Logs   |                                +-----------------------+
+                        
 
 
 Architectural Highlights
@@ -114,7 +86,7 @@ The architecture includes a fallback mechanism. If the OpenAI API key is invalid
 Requirement                       Implementation Status
 
 Structured JSON Outputs	         ✅ Enforced via Mongoose Schemas & Prompt Engineering.
-Prompt + Response Logging	     ✅ Stored in AILog collection; visible in UI Logs page.
+Prompt + Response Logging	       ✅ Stored in AILog collection; visible in UI Logs page.
 Environment-based API Keys	     ✅ Managed via .env file (Excluded from Git).
 Separation of Logic	             ✅ Distinct Routes, Services, and Models folders.
 Error Handling	                 ✅ Try/Catch blocks in API; User-friendly error alerts in UI 
@@ -128,7 +100,7 @@ OpenAI API Key (Optional - Project runs in Mock Mode without it)
 1. Clone Repository
 bash
 
-git clone https://github.com/YOUR_USERNAME/Sustainable-Commerce-AI.git
+git clone  https://github.com/beautymaji/Sustainable-Commerce-AI
 cd Sustainable-Commerce-AI
 2. Backend Setup
 bash
